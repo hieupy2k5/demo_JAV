@@ -24,7 +24,7 @@
       </AnchorPane>
       <AnchorPane prefHeight="800.0" prefWidth="1077.0">
          <children>
-            <TextField floatText="Blah" layoutX="209.0" layoutY="82.0" prefHeight="80.0" prefWidth="607.0" promptText="hello" />
+            <TextField layoutX="209.0" layoutY="82.0" prefHeight="18.0" prefWidth="550.0" promptText="Search document" />
          </children></AnchorPane>
    </children>
 </HBox>
