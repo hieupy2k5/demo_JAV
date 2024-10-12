@@ -1,16 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="org.example.demo.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
-
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<HBox prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.demo.HelloController">
+   <children>
+      <AnchorPane prefHeight="635.0" prefWidth="207.0" style="-fx-background-color: #FED700;">
+         <children>
+            <ImageView fitHeight="177.0" fitWidth="406.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@blah1.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="82.0" layoutY="200.0" text="JAV Libary" />
+            <Label layoutX="96.0" layoutY="254.0" text="Mup" />
+            <Label layoutX="96.0" layoutY="287.0" text="Viet" />
+            <Label layoutX="102.0" layoutY="316.0" text="Py" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="600.0" prefWidth="452.0">
+         <children>
+            <Button fx:id="logInButton" layoutX="185.0" layoutY="270.0" style="-fx-background-color: #FED700;" text="Login" />
+            <TextField fx:id="username" layoutX="136.0" layoutY="147.0" promptText="Username" />
+            <TextField fx:id="password" layoutX="136.0" layoutY="215.0" promptText="Password" />
+            <Label layoutX="114.0" layoutY="346.0" text="Not a user?">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="signUpButton" layoutX="209.0" layoutY="341.0" mnemonicParsing="false" style="-fx-background-color: #FED700; -fx-cursor: hand;" text="Sign Up">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

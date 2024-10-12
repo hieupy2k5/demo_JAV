@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.gluonhq.charm.glisten.control.TextField?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<HBox prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="$CONTROLLER_NAME$">
+<HBox prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.demo.SignUpController">
    <children>
       <AnchorPane prefHeight="635.0" prefWidth="207.0" style="-fx-background-color: #FED700;">
          <children>
-            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="35.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="177.0" fitWidth="406.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@blah1.png" />
                </image>
@@ -22,9 +20,25 @@
             <Label layoutX="102.0" layoutY="316.0" text="Py" />
          </children>
       </AnchorPane>
-      <AnchorPane prefHeight="800.0" prefWidth="1077.0">
+      <AnchorPane prefHeight="600.0" prefWidth="452.0">
          <children>
-            <TextField layoutX="209.0" layoutY="82.0" prefHeight="18.0" prefWidth="550.0" promptText="Search document" />
-         </children></AnchorPane>
+            <Button fx:id="signUpButton" layoutX="185.0" layoutY="413.0" style="-fx-background-color: #FED700;" text="Sign up" />
+            <TextField fx:id="username" layoutX="150.0" layoutY="148.0" promptText="Username" />
+            <TextField fx:id="password" layoutX="150.0" layoutY="234.0" promptText="Password" />
+            <Label layoutX="124.0" layoutY="291.0" text="Favorite Youtube Channel">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="Mup" layoutX="163.0" layoutY="318.0" mnemonicParsing="false" text="Mup" />
+            <RadioButton fx:id="Py" layoutX="163.0" layoutY="360.0" mnemonicParsing="false" text="Py" />
+            <Label layoutX="84.0" layoutY="470.0" text="Alreadly a member?">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="logInButton" layoutX="244.0" layoutY="465.0" style="-fx-background-color: #FED700; -fx-cursor: hand;" text="Log In!" />
+         </children>
+      </AnchorPane>
    </children>
 </HBox>
