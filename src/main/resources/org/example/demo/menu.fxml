@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.demo.MenuController">
+<children>
+    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="300.0" style="-fx-background-color: #ADADAD;">
+        <children>
+            <AnchorPane layoutY="373.0" prefHeight="100.0" prefWidth="300.0">
+                <children>
+                    <Button fx:id="button_Documents" layoutY="-10.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="300.0" text="Documents" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-10.0" />
+                </children>
+            </AnchorPane>
+            <AnchorPane layoutY="588.0" prefHeight="100.0" prefWidth="300.0">
+                <children>
+                    <Button fx:id="button_BorrowDocument" layoutY="-22.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="300.0" text="Borrow Documents" AnchorPane.bottomAnchor="22.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-22.0" />
+                </children>
+            </AnchorPane>
+            <AnchorPane layoutY="497.0" prefHeight="100.0" prefWidth="300.0">
+                <children>
+                    <Button fx:id="button_Users" layoutY="-33.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="300.0" text="Users" AnchorPane.bottomAnchor="33.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-33.0" />
+                </children>
+            </AnchorPane>
+            <AnchorPane layoutX="5.0" layoutY="700.0" prefHeight="100.0" prefWidth="300.0">
+                <children>
+                    <Button fx:id="button_Quit" layoutX="-5.0" layoutY="-4.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="300.0" style="-fx-cursor: hand;" text="Quit" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="-5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="-4.0" />
+                </children>
+            </AnchorPane>
+            <ImageView fitHeight="300.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@blah1.png" />
+               </image>
+            </ImageView>
+        </children>
+    </AnchorPane>
+    <AnchorPane prefHeight="800.0" prefWidth="980.0">
+        <children>
+            <RadioButton fx:id="radioButton_Document" layoutX="319.0" layoutY="143.0" mnemonicParsing="false" text="Document" />
+            <RadioButton fx:id="radioButton_Author" layoutX="434.0" layoutY="143.0" mnemonicParsing="false" text="Author" />
+            <RadioButton fx:id="radioButton_Publisher" layoutX="534.0" layoutY="143.0" mnemonicParsing="false" text="Publisher" />
+            <RadioButton fx:id="radioButton_Category" layoutX="644.0" layoutY="143.0" mnemonicParsing="false" text="Category" />
+            <TextField fx:id="TextField" layoutX="213.0" layoutY="76.0" prefHeight="50.0" prefWidth="500.0" promptText="Enter document name">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+            <Label layoutX="213.0" layoutY="142.0" text="Search by :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="713.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@SearchButton.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="button_Search" layoutX="713.0" layoutY="76.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: transparent; -fx-cursor: hand;" wrapText="true" />
+        </children>
+    </AnchorPane>
+</children>
+</HBox>
